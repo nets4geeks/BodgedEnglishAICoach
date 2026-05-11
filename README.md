@@ -17,6 +17,7 @@ Bodged English AI Coach is an unique CLI based tool, going to study foreign lang
 * Clone the repository
 * Satisfy [linux dependencies](docs/ubuntu_required.txt)
 * Install [python libs](docs/py_required.txt)
+* Create data/cache folder
 
 ## Creating a lesson 
 
