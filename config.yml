@@ -1,0 +1,27 @@
+
+url: http://127.0.0.1:11434/api/generate
+model: gemma3
+temperature: 0.8
+
+data: "data"
+
+eduLevel: "Intermediate (B2)"
+
+questionsTemplate: "questions.j2"
+numberQuestions: 5
+
+dialogsTemplate: "dialogs.j2"
+numberDialogs: 3
+
+checkTemplate: "check.j2"
+translateTemplate: "translate.j2"
+translateLanguage: "Russian"
+clarifyTemplate: "clarify.j2"
+queryTemplate: "query.j2"
+wordTemplate: "word.j2"
+
+ttsEngine: "google"
+ttsCache: "data/cache"
+
+textTemplate: "text.j2"
+gab: True

@@ -1,0 +1,74 @@
+{
+    "dialogs": [
+        {
+            "utterance1": "Hey, did you notice how Monday always feels like such a drag?",
+            "utterance2": "Yeah, I know, that fresh start feeling is brutal. It\u2019s weird, right?",
+            "utterance3": "It\u2019s linked to the moon, apparently. Intuition and change \u2013 fitting, I guess.",
+            "utterance4": "Totally. It\u2019s like the universe is saying, \u2018Get to work!\u2019",
+            "utterance1ID": "1e59751b37ed433a",
+            "utterance2ID": "9765875e33dd4064",
+            "utterance3ID": "9b1b99b714194895",
+            "utterance4ID": "939f96dde79743ed"
+        },
+        {
+            "utterance1": "Tuesday, Wednesday, and Thursday are pretty intense, aren\u2019t they?",
+            "utterance2": "Definitely. All those gods \u2013 Tyr, Odin... it\u2019s like they\u2019re pushing you to be productive.",
+            "utterance3": "It makes sense, considering how much business happens on those days.",
+            "utterance4": "Yeah, meetings galore! Makes you wonder if we're actually worshipping efficiency.",
+            "utterance1ID": "f799a056a59b401d",
+            "utterance2ID": "08635071991b4a74",
+            "utterance3ID": "a12f4a2a2c1b49a6",
+            "utterance4ID": "5b6ad0d3396d4f9e"
+        },
+        {
+            "utterance1": "Friday evening... that collective sigh of relief. It's a good thing.",
+            "utterance2": "Absolutely. It's become this global symbol of unwinding, hasn't it?",
+            "utterance3": "I look forward to it every week.",
+            "utterance4": "Me too. Time to switch off.",
+            "utterance1ID": "c3d882ce93764929",
+            "utterance2ID": "57e104073cf8437b",
+            "utterance3ID": "7d10b97536f94958",
+            "utterance4ID": "97098ca575ef4cea"
+        },
+        {
+            "utterance1": "Saturday is good, isn't it?  A day for fun.",
+            "utterance2": "Totally. Saturn \u2013 recreation and socializing. Nice balance.",
+            "utterance3": "Do you ever think about how much of our lives are shaped by these days?",
+            "utterance4": "Definitely. It's more than just ticking off the hours.",
+            "utterance1ID": "4948d48584b64fa5",
+            "utterance2ID": "00a8f5c5a079482c",
+            "utterance3ID": "8c8db6fa5a874e2b",
+            "utterance4ID": "688699e8ebad4af3"
+        },
+        {
+            "utterance1": "\u201cI've been reading about \u2018weekend anxiety.\u2019 It\u2019s crazy!\u201d",
+            "utterance2": "What is it? About the return to work?",
+            "utterance3": "Apparently, it shows how powerful these day names are. They shape our emotions.",
+            "utterance4": "\u201cThat\u2019s fascinating! So, we\u2019re basically controlled by Monday?\u201d",
+            "utterance1ID": "42c20893a7e44dea",
+            "utterance2ID": "629628ad9cd14392",
+            "utterance3ID": "d4bf2e3bed9c4a0c",
+            "utterance4ID": "aa7a4b33fe4a4e7b"
+        },
+        {
+            "utterance1": "Sunday's always a bit tricky, isn't it? The Sun and rest.",
+            "utterance2": "Yeah, but some people get anxious about Monday. It's a loop.",
+            "utterance3": "It\u2019s almost like a tiny, personal narrative.",
+            "utterance4": "\u201cA slightly stressful narrative, admittedly.\u201d",
+            "utterance1ID": "d6b105aece3f43be",
+            "utterance2ID": "1585268b32af4df2",
+            "utterance3ID": "1950bf7e5afa4693",
+            "utterance4ID": "ad97b9fcc89845cc"
+        },
+        {
+            "utterance1": "\u201cSo, all these days have this impact on us?\u201d",
+            "utterance2": "\u201cIt\u2019s weird how deeply ingrained it is, isn't it? The seven-day week.\u201d",
+            "utterance3": "It\u2019s more than just a calendar, really.\u201d",
+            "utterance4:" "\u201cIt\u2019s a whole cultural story.",
+            "utterance1ID": "d27dac6fc2f741a9",
+            "utterance2ID": "a314560809924a65",
+            "utterance3ID": "01b766d9528e4b97",
+            "utterance4ID": "da0cbd68efd6467c"
+        }
+    ]
+}

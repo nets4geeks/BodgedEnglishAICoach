@@ -1,0 +1,34 @@
+{
+    "questions": [
+        {
+            "question": "The text describes summer as arriving like what?",
+            "answer": "Summer arrives like an old friend, bringing long days and a slower pace of life.",
+            "questionID": "a0345cd56acb4ec1",
+            "answerID": "dedfb78660754068"
+        },
+        {
+            "question": "What specific weather events are often associated with summer in many countries?",
+            "answer": "Heatwaves, afternoon thunderstorms, and the smell of barbecue.",
+            "questionID": "b46ee981950e4fc9",
+            "answerID": "539f6ffef7134eca"
+        },
+        {
+            "question": "Why are early mornings particularly important for farmers during the summer?",
+            "answer": "Early mornings are the best time to be outside before the sun reaches its peak and the air shimmers with heat.",
+            "questionID": "7ce13664f948487c",
+            "answerID": "e3f25146bd3149ab"
+        },
+        {
+            "question": "How is climate change currently impacting the typical summer experience?",
+            "answer": "Climate change is making summers more extreme \u2013 heatwaves last longer, wildfires spread faster, and droughts threaten water supplies.",
+            "questionID": "6feb200c11b54290",
+            "answerID": "52bac140367c48a9"
+        },
+        {
+            "question": "What creates a sense of magic about a summer evening, according to the text?",
+            "answer": "The lingering light, the sound of children playing, and the promise of a gentle night ahead.",
+            "questionID": "80e23b864dd54b2a",
+            "answerID": "c84e93d5dc9e4efb"
+        }
+    ]
+}

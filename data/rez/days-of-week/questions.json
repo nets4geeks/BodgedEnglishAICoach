@@ -1,0 +1,46 @@
+{
+    "questions": [
+        {
+            "question": "According to the text, why does Monday often feel like a difficult transition?",
+            "answer": "Monday feels abrupt because it\u2019s the shift from the relaxed leisure of the weekend to the demands of work.",
+            "questionID": "4b98a9fb9bc941bc",
+            "answerID": "afb6ade2c6bc43c9"
+        },
+        {
+            "question": "Which deities are associated with Tuesday, Wednesday, Thursday, and Friday, respectively?",
+            "answer": "Tuesday - Tyr, Wednesday - Odin, Thursday - Thor, Friday - Jupiter.",
+            "questionID": "a6b3a9c75a414258",
+            "answerID": "b01fd8039fd84eb1"
+        },
+        {
+            "question": "What generally happens on Tuesday, Wednesday, and Thursday in business cultures?",
+            "answer": "Productivity peaks and meetings are common on these days.",
+            "questionID": "a9e62f8e0a274ab0",
+            "answerID": "2b0707bbd1744114"
+        },
+        {
+            "question": "What does Saturday's name, derived from Saturn, traditionally represent?",
+            "answer": "Saturday is typically devoted to recreation and socialising.",
+            "questionID": "5773bc565d2642f1",
+            "answerID": "e3b850c40d724907"
+        },
+        {
+            "question": "How does Sunday traditionally function, according to the text?",
+            "answer": "Sunday traditionally offers rest or reflection, though some experience anxiety about the upcoming Monday.",
+            "questionID": "deee34e1a1044405",
+            "answerID": "5fe923a9828a4ff2"
+        },
+        {
+            "question": "What does the text suggest about the relationship between the days of the week and our emotions?",
+            "answer": "The days form a narrative loop that influences our emotions, routines, and sense of control.",
+            "questionID": "d15c9814f9d94611",
+            "answerID": "1f63edcafa934f5b"
+        },
+        {
+            "question": "Why does the text describe the phenomenon of \u2018weekend anxiety\u2019 as \u2018powerful\u2019?",
+            "answer": "It highlights how ingrained cultural labels associated with the days of the week have become in our lives.",
+            "questionID": "a1842bb0c11b46ca",
+            "answerID": "3fadc88d54d44b38"
+        }
+    ]
+}

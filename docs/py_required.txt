@@ -1,0 +1,8 @@
+ollama
+pyyaml
+jinja2
+
+pyaudio
+pyttsx4
+gTTS
+
