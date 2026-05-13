@@ -1,5 +1,4 @@
 
-# cli interface
 
 import logging
 from jinja2 import Template

@@ -1,22 +1,23 @@
 
-# coacher
 
 import logging
 import sys
 
 import utl
 import llm
+import c
 import d
 import q
 import t
 import w
 import conf
 import tts
+import ver
 
 def M(config):
     t.show(config)
     while True:
-        i = input("[s]ay/[p]rint [a]udio/e[x]plain/[T|t]ranslate/[l]lm [q]uestions/[w]ords [e]xit\n$ ")
+        i = input("[s]ay/[p]rint [a]udio/e[x]plain/[T|t]ranslate/[l]lm [c]ram/[q]uestions/[w]ords [e]xit\n$ ")
 
         if (i == 'say') or (i == 's'):
             t.say(config)
@@ -27,11 +28,23 @@ def M(config):
         if (i == 'questions') or (i == 'q'):
             Q(config)
 
+
+        if (i == 'cram') or (i == 'c'):
+           if c.notEmpty(config):
+                C(config)
+           else:
+                print("no cram to learn :( choose something else :)")
+                if config['gab'] :
+                    tts.say("nocrams","No crams to learn in this lesson. Choose another option.", config)
+
+
         if (i == 'words') or (i == 'w'):
            if w.notEmpty(config):
                 W(config)
            else:
-                print("no words to learn :((")
+                print("no words to learn :( choose something else :)")
+                if config['gab'] :
+                    tts.say("nowords","No words to learn in this lesson. Choose another option.", config)
 
 
         if (i == 'audio') or (i == 'a'):
@@ -57,6 +70,56 @@ def M(config):
 
         if (i == 'exit') or (i == 'e'):
            exit(0)
+
+
+def C(config):
+    current = 0
+    final = c.findex(config)
+    c.show(current,config)
+    while True:
+        i = input("[s]ay/[p]rint/[n]ext [a]udio/e[x]plain/[t]ranslate/[l]lm [m]enu/[e]xit\n$ ")
+
+        if (i == 'menu') or (i == 'm'):
+            M(config)
+
+        if (i == 'exit') or (i == 'e'):
+            exit(0)
+
+
+        if (i == 'audio') or (i == 'a'):
+            k = input("type a phrase to say: ")
+            tts.tmp(k,config)
+
+        if (i == 'translate') or (i == 't'):
+            k = input("type a phrase to translate: ")
+            t.translate(k, config)
+
+
+        if (i == 'explain') or (i == 'x'):
+            k = input("type a word to explain: ")
+            t.clarify(k, config)
+
+
+        if (i == 'llm') or (i == 'l'):
+            k = input("type a prompt to llm: ")
+            t.query(k, config)
+
+
+        if (i == 'next') or (i == 'n'):
+           if current < final:
+                current = current+1
+                c.show(current,config)
+           else:
+                print("\nurra! there's no crams. type [m]enu to return or [e]xit to leave\n")
+                if config['gab'] :
+                    tts.say("complited","Task completed! Type 'm' for menu or 'e' to exit", config)
+
+        if (i == 'print') or (i == 'p'):
+            c.show(current,config)
+
+
+        if (i == 'say') or (i == 's'):
+            c.say(current,config)
 
 
 def W(config):
@@ -168,6 +231,8 @@ def Q(config):
 
 def main():
 
+    print("\n::: coach v"+ver.get()+" :::\n")
+
     config = conf.get(sys.argv[1])
 
     lessons = t.printLessons(config)
@@ -175,6 +240,7 @@ def main():
     i = int(input("enter lesson's number: "))
 
     conf.load(lessons[i],config)
+    conf.log("| coach | "+lessons[i], config)
 
     M(config)
 

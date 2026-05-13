@@ -1,7 +1,7 @@
 
 # Bodged English AI Coach
 
-Bodged English AI Coach is an unique CLI based tool, going to study foreign languages.
+Bodged English AI Coach is a CLI based tool, going to study foreign languages.
 
 "No shiny UI, no fluff: just raw AI conversations, instant grammar corrections, and vocabulary drills, all wrapped in a gloriously “bodged” but surprisingly effective package. Perfect for hackers, minimalists, and anyone who learns better without the distraction of a GUI." (deepseek cuts)
 
@@ -21,7 +21,7 @@ Bodged English AI Coach is an unique CLI based tool, going to study foreign lang
 
 ## Creating a lesson 
 
-To create a lesson via LLM, find a English text and run:
+To create a lesson via LLM, find an English text and run:
 
 ```
 ./build.sh <english_text_file.txt> <lesson_name>
@@ -38,7 +38,7 @@ To run:
 ./coach.sh 
 ```
 
-At the first stage choose a lesson (number), then navigate with keyword (press enter as needed).
+At the first stage choose a lesson (number), then navigate with keyword (sometimes press enter).
 
 Text menu:
 * listen to the text (s)
@@ -53,9 +53,14 @@ Either Questions (q) or Words (w) menu:
 * say question (sq) or answer (sa)
 * display them (pq) (pa)
 * move to the next item (n)
-* constract a sentence and check via llm (c)
-* translate (t), explain (x) a word/sentence
+* construct a sentence and check via llm (c)
+* translate (t), explain (x) a word/sentence, query llm (l)
 * go to main menu (m) or exit (e)
+
+Cram (c) means going through pieces of text ("crams") one by one in order to learn the text.
+* say (s) or print (p) a cram 
+* go to the next one (n)
+* translate (t), explain (x) a word/sentence, query llm (l)
 
 
 Enjoy.

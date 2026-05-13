@@ -1,6 +1,4 @@
 
-# dialogs document
-
 import uuid
 import json
 import logging

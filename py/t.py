@@ -1,6 +1,4 @@
 
-# a text document
-
 import uuid
 import json
 import logging
@@ -23,9 +21,9 @@ def load(config):
 
 def show(config):
     inf.show("Text", config['name'], config['text']['id'], config['text']['text'], config['textTemplate'])
-    if config['gab'] :
+    if (config['gab']) and (config['notSay']) :
         say(config)
-
+        config['notSay'] = False
 
 def say(config):
     tts.say(config['text']['id'], config['text']['text'], config)
@@ -35,8 +33,8 @@ def check(text,config):
     config['checkText'] = text
     output = llm.ask2(config['checkTemplate'], config)
     inf.show("Recommendation", config['model'], "temp: "+str(config['temperature']), output, config['textTemplate'])
-#    if config['gab'] :
-#        tts.tmp(output,config)
+    if config['gab'] :
+        tts.tmp(output,config)
 
 def translate(text,config):
     config['translateText'] = text
@@ -45,7 +43,8 @@ def translate(text,config):
 
 
 def translateText(config):
-    return translate(config['text']['text'],config)
+    translate(config['text']['text'],config)
+
 
 def clarify(text,config):
     config['clarifyText'] = text

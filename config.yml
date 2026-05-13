@@ -25,3 +25,5 @@ ttsCache: "data/cache"
 
 textTemplate: "text.j2"
 gab: True
+
+log: False

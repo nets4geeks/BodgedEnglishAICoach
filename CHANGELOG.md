@@ -1,6 +1,13 @@
 
 # Changelog
 
+
+## Version 0.60 (01.06.2026)
+
+* added crams
+* added study log
+* made it a bit less gabby
+
 ## Version 0.50 (11.05.2026)
 
 * supports questions and words learning

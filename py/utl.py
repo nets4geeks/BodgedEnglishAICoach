@@ -22,17 +22,13 @@ def saveFile(path,data):
        f.write(data)
        f.close()
 
-# creates or empty folder
 def prepareFolder(path):
     logging.info("creating folder "+path )
     Path(path).mkdir(exist_ok=True)
-#    logging.info("emptying folder "+path )
-#    for f in glob.glob(path+"/*"):
-#        os.remove(f)
 
 
 def getFolder(fld):
-    path = Path(fld) # Current directory
+    path = Path(fld)
     arr=[]
     for item in path.iterdir():
         
