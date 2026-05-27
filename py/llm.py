@@ -20,6 +20,7 @@ def ask(templateName, config):
     payload = {
        "model":  config['model'],
        "prompt": prompt,
+       "think": config['think'],
        "stream": False
     }
 
@@ -55,7 +56,8 @@ def ask2(templateName, config):
     payload = {
        "model":  config['model'],
        "prompt": prompt,
-       "stream": False
+       "stream": False,
+       "think": config['think']
     }
 
     if config['temperature'] != None:
@@ -67,3 +69,48 @@ def ask2(templateName, config):
     response = requests.post(config['url'], json=payload)
 
     return response.json()['response']
+
+
+def chat(config, msg):
+
+
+    if len(config['context']) == 0:
+        path = "./templates/"+config['chatInitTemplate']
+        logging.info("creating chat from "+path)
+
+        with open(path, 'r') as f:
+           prompt = Template(f.read()).render(config)
+    else:
+        path = "./templates/"+config['chatTemplate']
+        config['currentMessage'] = msg
+        logging.info("creating chat from "+path)
+        with open(path, 'r') as f:
+           prompt = Template(f.read()).render(config)
+
+    config['context'].append({"role": "user", "content": prompt})
+
+
+    payload = {
+       "model":  config['model'],
+       "messages": config['context'],
+       "think": config['think'],
+       "stream": False
+    }
+
+    if config['temperature'] != None:
+        payload["temperature"]=config['temperature']
+
+    logging.info("asking "+config['model']+" via "+config['chat'])
+
+    print("asking llm, please wait...")
+#    print(payload)
+
+    response = requests.post(config['chat'], json=payload)    
+    assistant_message = response.json()['message']
+    config['context'].append(assistant_message)
+
+    return assistant_message['content']
+
+
+
+

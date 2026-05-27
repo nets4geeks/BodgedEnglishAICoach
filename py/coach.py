@@ -17,7 +17,7 @@ import ver
 def M(config):
     t.show(config)
     while True:
-        i = input("[s]ay/[p]rint [a]udio/e[x]plain/[T|t]ranslate/[l]lm [c]ram/[q]uestions/[w]ords [e]xit\n$ ")
+        i = input("[s]ay/[p]rint [a]udio/e[x]plain/[T|t]ranslate/[l]lm [c]ram/[q]uestions/[d]ialog/[w]ords [e]xit\n$ ")
 
         if (i == 'say') or (i == 's'):
             t.say(config)
@@ -70,6 +70,56 @@ def M(config):
 
         if (i == 'exit') or (i == 'e'):
            exit(0)
+
+        if (i == 'dialog') or (i == 'd'):
+            D(config)
+
+
+def D(config):
+
+    d.init(config)
+    d.show(config)
+
+    while True:
+        i = input("[s]ay/[p]rint/[r]eply [a]udio/e[x]plain/[t]ranslate/[l]lm [m]enu/[e]xit\n$ ")
+
+        if (i == 'menu') or (i == 'm'):
+            M(config)
+
+        if (i == 'exit') or (i == 'e'):
+            exit(0)
+
+
+        if (i == 'llm') or (i == 'l'):
+            k = input("type a prompt to llm: ")
+            t.query(k, config)
+
+        if (i == 'audio') or (i == 'a'):
+            k = input("type a phrase to say: ")
+            tts.tmp(k,config)
+
+        if (i == 'translate') or (i == 't'):
+            k = input("type a phrase to translate: ")
+            t.translate(k, config)
+
+
+        if (i == 'explain') or (i == 'x'):
+            k = input("type a word to explain: ")
+            t.clarify(k, config)
+
+
+        if (i == 'print') or (i == 'p'):
+            d.show(config)
+
+
+        if (i == 'say') or (i == 's'):
+            d.say(config)
+
+        if (i == 'reply') or (i == 'r'):
+            k = input("type your replica: ")
+            d.nxt(config,k)
+            d.show(config)
+            
 
 
 def C(config):

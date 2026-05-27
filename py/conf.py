@@ -48,6 +48,8 @@ def vars(name,config):
     config['wordsFile'] = config['path']+"/words.json"
     config['cramsFile'] = config['path']+"/crams.json"
     config['notSay'] = True
+    config['context'] = [] # for chat
+
 
 
 def init(path, name, config):

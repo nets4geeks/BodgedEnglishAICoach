@@ -10,7 +10,7 @@ Bodged English AI Coach is a CLI based tool, going to study foreign languages.
 * Linux (able to play mp3 files)
 * Ollama (running to serve)
 * a local LLM model (e.g. Gemma3:4b)
-* good mood and tolerance of Google's Lady
+* ~~good mood~~ and tolerance of google's lady
 
 ## Installation
 
@@ -38,7 +38,7 @@ To run:
 ./coach.sh 
 ```
 
-At the first stage choose a lesson (number), then navigate with keyword (sometimes press enter).
+At the first stage choose a lesson (number), then navigate with keywords (sometimes press enter).
 
 Text menu:
 * listen to the text (s)
@@ -62,6 +62,9 @@ Cram (c) means going through pieces of text ("crams") one by one in order to lea
 * go to the next one (n)
 * translate (t), explain (x) a word/sentence, query llm (l)
 
+
+Dialogs (d) represent free communication with AI about given topic. Use (r) to reply LLM.
+Translation (t), explanation (x), and quiering (l) available as well.
 
 Enjoy.
 

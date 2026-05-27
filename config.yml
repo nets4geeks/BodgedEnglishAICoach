@@ -5,7 +5,8 @@ temperature: 0.8
 
 data: "data"
 
-eduLevel: "Intermediate (B2)"
+# like  Beginner/Elementary (A1), Intermediate (B1), Upper Intermediate (B2) etc.
+eduLevel: "Intermediate (B1)"
 
 questionsTemplate: "questions.j2"
 numberQuestions: 5
@@ -27,3 +28,8 @@ textTemplate: "text.j2"
 gab: True
 
 log: False
+
+chat: http://127.0.0.1:11434/api/chat
+chatInitTemplate: "startChat.j2"
+chatTemplate: "chat.j2"
+think: False

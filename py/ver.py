@@ -2,4 +2,4 @@
 
 
 def get():
-    return "0.60"
+    return "0.70"

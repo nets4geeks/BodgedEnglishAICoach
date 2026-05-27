@@ -1,6 +1,9 @@
 
 # Changelog
 
+## Version 0.70 (01.07.2026)
+
+* added free dialogs
 
 ## Version 0.60 (01.06.2026)
 

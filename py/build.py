@@ -5,7 +5,6 @@ import sys
 import utl
 import llm
 import c
-import d
 import q
 import t
 import w
@@ -32,9 +31,6 @@ def main():
 
     questions = llm.ask(config['questionsTemplate'], config)
     q.save(questions,config)
-
-#    dialogs = llm.ask(config['dialogsTemplate'], config)
-#    d.save(dialogs,config)
 
     conf.log("| build | "+config['name'], config)
 

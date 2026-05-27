@@ -4,20 +4,31 @@ import json
 import logging
 
 import utl
+import tts
+import inf
+import llm
 
-def add (dialogs):
-    dialogsList = []
-    for qa in dialogs['dialogs']:
-        qa['utterance1ID'] = uuid.uuid4().hex[:16]
-        qa['utterance2ID'] = uuid.uuid4().hex[:16]
-        qa['utterance3ID'] = uuid.uuid4().hex[:16]
-        qa['utterance4ID'] = uuid.uuid4().hex[:16]
-        dialogsList.append(qa)
-    return {'dialogs': dialogsList }
+def init(config):
+    config['context'] = []
+    config['currentResponse'] =  llm.chat(config, "hello")
+    config['currentResponseNum'] =  0
 
 
-def save(dialogs, config):
-    logging.info("saving dialogs" )
-    new = add(dialogs)
-    utl.saveFile(config['dialogsFile'],  json.dumps(new, indent=4))
 
+def get(config):
+    return config['currentResponse']
+
+
+def nxt (config,msg):
+    config['currentResponse'] = llm.chat(config, msg)
+    config['currentResponseNum'] = config['currentResponseNum']+1
+
+
+def say (config):
+    tts.tmp(config['currentResponse'],config)
+
+def show(config):
+    inf.show("Dialog with", config['model'], str(config['currentResponseNum']), config['currentResponse'], config['textTemplate'])
+
+    if config['gab'] :
+        say(config)
