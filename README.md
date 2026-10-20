@@ -3,8 +3,6 @@
 
 Bodged English AI Coach is a CLI based tool, going to study foreign languages.
 
-"No shiny UI, no fluff: just raw AI conversations, instant grammar corrections, and vocabulary drills, all wrapped in a gloriously “bodged” but surprisingly effective package. Perfect for hackers, minimalists, and anyone who learns better without the distraction of a GUI." (deepseek cuts)
-
 ## Requirements
 
 * Linux (able to play mp3 files)

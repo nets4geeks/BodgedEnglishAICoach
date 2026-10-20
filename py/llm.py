@@ -30,7 +30,14 @@ def ask(templateName, config):
 
     logging.info("asking "+config['model']+" via "+config['url'])
     print("asking llm, please wait...")
-    response = requests.post(config['url'], json=payload)
+
+    headers = {}
+    if config['key'] != None:
+       headers['X-API-Key'] = config['key']
+       
+    response = requests.post(config['url'], headers=headers, json=payload)
+
+
 
 #    print (response.json()['response'])
 
@@ -66,7 +73,13 @@ def ask2(templateName, config):
 
     logging.info("asking "+config['model']+" via "+config['url'])
     print("asking llm, please wait...")
-    response = requests.post(config['url'], json=payload)
+
+
+    headers = {}
+    if config['key'] != None:
+       headers['X-API-Key'] = config['key']
+
+    response = requests.post(config['url'], headers=headers, json=payload)
 
     return response.json()['response']
 
@@ -105,7 +118,12 @@ def chat(config, msg):
     print("asking llm, please wait...")
 #    print(payload)
 
-    response = requests.post(config['chat'], json=payload)    
+    headers = {}
+    if config['key'] != None:
+       headers['X-API-Key'] = config['key']
+
+    response = requests.post(config['chat'], headers=headers, json=payload)    
+    print(response)
     assistant_message = response.json()['message']
     config['context'].append(assistant_message)
 

@@ -31,10 +31,8 @@ def getFolder(fld):
     path = Path(fld)
     arr=[]
     for item in path.iterdir():
-        
         arr.append(item.name)
-
-    return sorted(arr)     
+    return sorted(arr)
 
 def getWords(text):
     return re.findall(r'\[(.*?)\]', text)
